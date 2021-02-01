@@ -53,6 +53,7 @@ def process_signup():
     return render_template('signup.html', title="SIGN-UP", information=information)
 
 
+
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('page-not-found.html'), 404
